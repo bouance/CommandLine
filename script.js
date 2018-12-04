@@ -1,168 +1,283 @@
-Write a console.log statement saying "Hello World!" for each language that you know.
-For example:
-Halo, dunia! // Indonesian
-Ciao, mondo! // Italian
-Hola, mundo! // Spanish
-solution
+//1a 
+let age ="35";
 
-var sayHello = 'Halo, dunia'; // Indonesian
-console.log(Halo, dunia);
-sayHello = 'Halo, dunia'; //Italian
-console.log(Halo, dunia);
-sayHello = 'Hola, mundo';  // Spanish
-console.log(Hola, mundo)
-sayHello ='hello world'; //english
-console.log(hello,world)
+//1b
+const name ("liberty");
 
 
-console.log("I'm awesome");
+//1c
+let isMarried ="false";
+
+//1d
+age ++;
+
+//1e
+age =35;
+//it possible with let
+
+
+//2a. What is the type of the variable age from section 1?
+console.log(typeof age);
+
+
+//2b.
+console.log(typeof name);
+
+
+//2c
+console.log(isMarried);
+
+
+//2d
+value="4";
+
+
+//e
+console.log(type of "Hello" );
 
 
 
+//2f
+console.log(typeof true);
 
-/* 3. Declare a variable x and initialize it with an integer, using these exact steps:
-3.1 First, declare your variable x (do not initialize it yet).
-3.2 Add a console.log statement that explains that explains in words what you think the value of x is  */
+//2g
+let x = 123;
 
-var x=67;
-console.log('the value of my variable x will be: number ');
-console.log(x);
-x=45.89;
-console.log('the value of my variable x will be: number');
-console.log(x);
-
-/* 4. Declare a variable y and assign a string to it.
-4.1 Write a console.log statement in which you explain in words what you think the value of the string is.
-4.2 Now console.log the variable y.
-4.3 Now assign a new string to the variable y.
-4.4 Just like you did before write a console.log statement that explains in words what you think will be logged to the console.
-4.5 Now console.log y again. */
-
-var y = 'HYF';
-console.log('4. the value of my string will be: HYF');
-console.log(y);
-y = 'WEEK2 JAVA SCRIPT';
-console.log('4. the value of my string will be: WEEK2 JAVA SCRIPT ');
-console.log(y);
+//2h
+let x = "123";
 
 
-/* 5. How do you round the number 7.25, to the nearest integer (i.e., whole number)?
-5.1 Declare a variable z and assign the number 7.25 to it.
-5.2 Console.log z.
-5.3 Declare another variable a that has the value of z but rounded to the nearest integer.
-5.4 Console.log a.
-5.5 So now we have z and a find a way to compare the two values and store the highest of the two in a new variable.
-5.6 Console.log the highest value. */ 
+//3a
+if the variable that is being evaluated does not have an assigned value. A function returns undefined 
 
-let z =7.25;
-console.log('5. Value before use of round function =' + z); 
-let a = Math.round(z);
-console.log('5. Value after using the round function =' + a);
-var highestValue = Math.max(z,a);
-console.log('5. highestValue ' + highestValue);
+//3b
+The NaN property represents "Not-a-Number" value
+
+//3c
+console.log(typeof nan);
+
+//3d
+console.log(typeof x)
+x="string"
 
 
-/* 6. Arrays!
-6.1 Declare an empty array. Make sure that the name you choose indicates 'plurality', because an array is capable of containing more than one element. (See Naming conventions.)
-6.2 Write a console.log statement that explains in words what you think the value of the array is.
-6.3 Console.log your array.
-6.4 Create an array that has your favorite animals inside (see if you can find a good name that exactly describes what this variable will hold).
-6.5 Log your array.
-6.6 Add a statement that adds Daan's favorite animal ('baby pig') to the existing array.
-6.7 Log your new array! */
- 
- var myArrays = [ ];
-console.log('6. the value of array will be: Null');
-console.log(myArrays);
-myArrays = ['Horse', 'cow', 'donkey','tiger'];
-console.log(myArrays);
-console.log(myArrays);
-myArrays.push('baby pig');
-console.log(myArrays);
+//3e
+console.log(typeof y)
 
-/*7.1 Let's consider the following string: let myString = "this is a test".
-7.2 Add the string to your file and console.log it.
-7.3 Find a way to get the length of myString.
-7.4 Console.log the length of myString. */
- 
-let myString = "this is a test";
-console.log(myString);
-console.log('myString length is ');
-console.log(myString.length);
- 
+//3f
+var z = nan
 
-/* 8. Write a program that checks the types of two variables and prints out SAME TYPE if they are the same type.
-8.1 First declare at least four variables and assign them different data types.
-8.2 For each variable write a console.log statement that logs the value
- 
-let foo = 3;
-console.log('The value of my variable foo is: ' + foo);
-(Curious to know what a foo is? Check this article on WikiPedia.)
- 
-8.3 Now write a console.log statement wherein you first explain in words what you think the type of your variables is.
-8.4 Now use typeof to log the actual type of your variables.
-8.5 Now compare the types of your different variables with one another.
-8.6 Make sure to also show a message when the variables you are comparing are not the same type. */
- 
-let fooint = 5;
-console.log('8. The value of my variable foo is number: ' + fooint);
-console.log(typeof fooint);
- 
-let fooFloat = 3.46;
-console.log('8. The value of my variable foo is number: ' + fooFloat);
-console.log(typeof fooFloat);
- 
-let foostring = 'foocafe';
-console.log('The value of my variable foo is string: ' + foostring);
-console.log(typeof foostring);
- 
-let fooBool = true ;
-console.log('8. The value of my variable foo is boolean : ' + fooBool);
-console.log(typeof fooBool);
- 
-let foo_obj = {food: "Pulao ", Cuisine: "Indian"};
-console.log('The vlue of my variable obj is: object ' + foo_obj.food, foo_obj.Cuisine);
-console.log(typeof foo_obj);
- 
-if (typeof fooint == typeof foostring)    console.log('8. typeof fooint == typeof foostring  SAME TYPE');
-else console.log('8. typeof fooint == typeof foostring  not same type');
- 
-if (typeof fooFloat == typeof fooint)    console.log('8. fooFloat == typeof fooint SAME TYPE');
-else console.log('8. typeof fooFloat == typeof fooint  not same type');
- 
+//3g
+x == 4; 
+is the correct
+
+//3h
+x === null; 
+is the correct
+
+//4a
+var sum =
+var a= 10
+var b= 15
+var sum =a+b
+console.log(sum);
+
+//4b
+3 + 4 * 2
+11
+
+//4c
+let exp =11(14);
+
+//4d
+20 - 8 - 2 - 4
+6
+
+//4e
+var m (6++4)
+
+//4e
+var vt="Hello," + "world"
+hello,world
+
+//4f
+var bt ="Hello".length
+5
+
+//5a
+console.log(typeof true)
 
 
-/* 9. If x equals 7, and the only other statement is x = x % 3, what would be the new value of x?
-9.1 Add at least 3 console.log statements in which you show that you understand what % does. */
-  
-var rem = 7;
-rem = 7%3;
-console.log(rem);
- 
-rem = 56;
-rem =rem % 3;
-console.log(rem);
-             
-rem = 90.45;
-rem =rem % 3.0;
-console.log(rem);
- 
-/* 10.1 Can you store multiple types in an array? Numbers and strings? Make an example that illustrates your answer.
-10.2 Can you compare infinities? (Not in Eyad's world) - does 6/0 === 10/0? How can you test this? */
- 
-var multipleArray = [];
- 
-multipleArray = ['Horse', 2, 'donkey',4];
-console.log(multipleArray);
-multipleArray = multipleArray.concat(['baby pig' , 4.5]);
-console.log('the value of array will be:' + multipleArray );
-console.log(multipleArray);
- 
- 
-if(6/0 === 10/0) {
-  console.log('Infinite can be compared!');
+//5b
+false
+
+//5c
+false
+// not the same value
+
+//5d. What is the value of 10 === 10?
+true
+//both are the same value
+
+
+//5eWhat is the result of true === false
+false
+
+//5g. What is the type of !b?
+is true
+console.log()
+
+
+
+//6a
+var arrl=[];
+
+
+//6b. What is the length of the array ["Beef", "Chicken", "Vegetarian"]?
+var arrl=["Beef", "Chicken", "Vegetarian"]
+console.log(arrl.length)
+
+
+//let	arr	=	[10,	8,  1];	
+//6c. Write code to add the number 2 to the end of the array
+arrl.push(2);
+console.log(arrl);
+
+
+//6d Write code to add the number 12 to the start of the array.
+arrl. unshift(12)
+console.log(arrl)
+
+//6d Write code that prints the first item in the array to the console
+console.log(arrl[0]);
+
+//6g. Write code that prints the items of an array arr to the console,each item should be logged separately (use a for loop!)
+console.log(arrl[0] ,arrl[2] , arrl[3] ,arrl[4]);
+
+
+//6h. What does the following JavaScript evaluate into: [].length
+console.log([].length);
+
+//6i. Given an array let ingredients = ["Banana", "Oats", "Milk"], is itpossible to add an item to the array?
+yes is possible through pop ,push, unshift or shift
+
+
+
+//6j. Given an array const ingredients = ["Banana", "Oats", "Milk"], isit possible to add an item to the array?
+yes is possible you can add and remove item from box
+
+
+//6k let	arr1	=	[1,	2,	3];arr1.push(4);arr1.shift();let	arr2	=	[2,	3,	4];let	arr3	=	[];for	(let	i	=	0;	i	<	arr2.length;	i++)	{arr3.push(1);
 }
-else {
-  console.log(6/0 === 10/0);
+console.log(arr1.length);
+
+//6l What is the result of arr1 === arr2?
+console.log(arr1 === arr2);
+
+
+//6m. What is the result of arr1[0] === arr2[0]?
+
+console.log(arr1[0] === arr2[0]);
+
+
+//6n. What is the value of arr3
+console.log(arrl;);
+
+
+//7a. Write a function called four that returns the value 4
+functionfour(){
+    return4;
+    console.log(four);
+
+
+
+
+     //functionfive()	{ return5;}functionadd(a,	b)	{return	a	+	b;}functionrun()	{console.log("Running...");}functionwhatIsTheTypeOf(v)	{console.log("The	type	of	v	is	"	+	typeof	v);
+
+    //7b. What is the type of five()?
+    console.log(type of five());
+
+
+    //7c. What is the type of five?
+    console.log(five);
+
+    //7d. How many parameters does the function add have?
+    two Parameters
+
+
+    //7e. How many parameters does the function five have?
+    no Parameters
+
+    //7f. What is the type of add(1, 2)?
+    console.log(type of add(1, 2));
+
+
+    //7g. What is the type of add("Hello, ", "world")
+    console.log(type of add("Hello, ", "world"));
+
+    //7h. What is the type of run()?
+    console.log(type of run());
+
+    //7i. What does this code print to the console: whatIsTheTypeOf(8)?
+    console.log(whatIsTheTypeOf(8));
+
+    //7j. What does this code print to the console:
+    //whatIsTheTypeOf(run)?
+console.log(whatIsTheTypeOf(run));
+
+
+
+//8a. What does the following JavaScript evaluate into: typeof "4" === typeof 4?
+console.log(typeof "4" === typeof 4);
+
+// 8b. Given an array arr, of which you do not know the length. Write code that prints the last element of the array to the console.
+
+console.log(arr.length -2);
+
+// 8c. Write a function that has one parameter called arr and it returns a number, which is the length of the array times two.
+
+function arrr() {
+    return arrr.length * 2;
 }
-console.log(6/0 === 10/0);
+
+
+// 8d. Write a function that takes an argument name and prints to the console: "Hello, <name>, how are you doing?".
+function names() {
+    console.log("Hello," + names + "How are you doing?");
+}
+console.log(names);
+
+
+const ingredients = ["Banana", "Oats", "Milk"];
+const commandString = "ls|cd|touch|cp";
+
+// 8f. Write code that prints an ingredient list for pancakes using the
+// variable ingredients. The list should look like this: "For pancakes,
+// you will need Banana and Oats and Milk.". Use the function join!
+console.log(`For pancakes, you will need ${ingredients.join()}.`);
+
+
+// 8g. Use the function split to convert the string commandString into
+// an array of commands.
+
+
+
+// 8h. Write a function that doubles an array. It:
+// Has a parameter called arr, which should be an array.
+// Creates a new array (you may come up with the name).
+// Adds the elements of arr to the new array (use a for
+// loop).
+// Adds again the elements of arr to the new array.
+// Returns the new array.
+
+function arrrrr() {
+    arr123 = [1, 2, 3, 4, 5,6];
+    arr123 + arr() + arr();
+    return arr123;
+    console.log(arr123);
+}
+
+
+
+
+
